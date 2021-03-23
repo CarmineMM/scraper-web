@@ -1,0 +1,34 @@
+<?php 
+ 
+/**
+ * Scraper para descargar contenido.
+ * Version: 1.0.0
+ * 
+ * Version Minima de PHP: 7.2
+ * 
+ * Carmine Maggio <carminemaggiom@gmail.com>
+ * 
+ * The user who executes this program is solely responsible for the misleading distribution and misuse of resources. 
+ * Carmine Maggio disclaims any moral responsibility and copyright infringement. 
+ */
+
+// Check PHP Version
+$minPHPVersion = 7.2;
+if ( phpversion() < $minPHPVersion )
+{
+    die("Your PHP version must be {$minPHPVersion} or higher to run <b>Scraper</b>. Current version: " . phpversion());
+}
+unset($minPHPVersion);
+
+// Separador de carpetas
+define('DG', DIRECTORY_SEPARATOR);
+
+// Ruta raíz
+define('ROOT_PATH', dirname(__FILE__).DG);
+
+require_once ROOT_PATH.'vendor/autoload.php';
+
+// Executor
+\Scraping\Foundation::run(
+    'config.php' # India el archivo de configuración
+);
