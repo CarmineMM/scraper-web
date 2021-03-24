@@ -18,15 +18,15 @@ La configuración del paquete ocurre en el archivo __config.php__
 #### Configuración: _drive_
 
 ```php
-   /**
-    * -----------------------------------
-    *  Drive            
-    * ----------------------------------- 
-    * 
-    * ...
-    * 
-    */
-    'drive' => 'tmo',
+/**
+* -----------------------------------
+*  Drive            
+* ----------------------------------- 
+* 
+* ...
+* 
+*/
+'drive' => 'tmo',
 ```
 El _drive_ indica condicionalmente al scraper de donde se tomaran los recursos, los drive soportados son:
 
@@ -49,22 +49,21 @@ El _drive_ indica condicionalmente al scraper de donde se tomaran los recursos, 
 #### Configuración: _url_
 
 ```php
-   /**
-    * -----------------------------------
-    * URL completa del Manga
-    * -----------------------------------
-    * 
-    * ...
-    * 
-    */
-    'url' => '',
+/**
+* -----------------------------------
+* URL completa del Manga
+* -----------------------------------
+* 
+* ...
+* 
+*/
+'url' => '',
 ```
 Especifica la URL del manga, ej: https://lectortmo.com/library/manga/8635/mushoku-tensei-isekai-ittara-honki-dasu
 la URL debe concordar con el _drive_ especificado.
 
 > Nota: También se puede colocar el Link de un capitulo en especifico, y el Scraper descargara las imágenes del recurso especifico. ej: https://lectortmo.com/viewer/5af24a054e682/paginated
 
-<br />
 
 #### Configuración: _start_ - _end_
 
@@ -76,25 +75,23 @@ Especifica el numero de inicio y fin para la descarga de recurso, este numero no
 - Número: 05 - Capitulo: 03.0
 
 ```php
-    /**
-     * -----------------------------------
-     * Numero de inicio y fin
-     * -----------------------------------
-     * 
-     * ...
-     * 
-     */
-    'start' => 0,     
-    'end'   => false, # 'false' indica que descargara todo lo disponible
+/**
+ * -----------------------------------
+ * Numero de inicio y fin
+ * -----------------------------------
+ * 
+ * ...
+ * 
+ */
+'start' => 0,     
+'end'   => false, # 'false' indica que descargara todo lo disponible
 ```
 
-<br />
 
 ## Guardado de archivos
 
 Los archivos se guardan en la carpeta __"./manga"__ y luego el nombre del recurso descargado.
 
-<br />
 
 ## Ejecutar
 

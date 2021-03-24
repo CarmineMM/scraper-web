@@ -79,8 +79,8 @@ class Tmo
         if ( $countChapter <= 10 )      $totalChapter = "00".$countChapter;
         elseif ( $countChapter <= 100 ) $totalChapter = "0".$countChapter;
 
-        for ($i = count($allChapters)-1; $i > 0; $i--) { 
-
+        for ($i = count($allChapters)-1; $i >= 0; $i--) { 
+            
             // Evita la ejecución en caso de no comenzar a descargar el capitulo
             if ( $chapter < $start ) {
                 $chapter++;
@@ -88,7 +88,7 @@ class Tmo
             }
 
             // Sale del FOR en caso de acabar
-            if ($end > 0 && $chapter > $end) break;
+            if ($end !== 0 && $chapter > $end) break;
             
             //
             // Numero crudo del capitulo
@@ -118,7 +118,7 @@ class Tmo
             //
             $this->getChapter(
                 $linkTo->find('meta[property="og:url"]')[0]->attr['content'], 
-                $path.DG. "{$numChapter} - {$nameChapter}"
+                $path.DG."{$numChapter} - {$nameChapter}"
             );
 
             echo "\n{$numChapter}/{$totalChapter} - ";

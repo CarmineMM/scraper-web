@@ -36,7 +36,7 @@ return [
      * Ej: https://lectortmo.com/library/manga/8635/mushoku-tensei-isekai-ittara-honki-dasu
      * 
      */
-    'url' => '',
+    'url' => 'https://lectortmo.com/library/manga/8635/mushoku-tensei-isekai-ittara-honki-dasu',
 
     /**
      * -----------------------------------
@@ -54,6 +54,6 @@ return [
      *         05 - 03.0
      * 
      */
-    'start' => 0,     
+    'start' => 77,     
     'end'   => false, # 'false' indica que descargara todo lo disponible
 ];
