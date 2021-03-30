@@ -4,9 +4,9 @@ Este Scraper busca realiza descargas de recursos (imágenes) de sitios webs, seg
 
 ### Requerimientos
 
-- PHP 7.2
+- PHP 7.4.16
 
-Se require tener habilitado PHP en la __CLI__ y la version minima debe ser la __7.2__
+Se require tener habilitado PHP en la __CLI__ y la version minima debe ser la __7.4.16__
 ```
 $ php --version
 ```

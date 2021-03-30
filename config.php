@@ -36,7 +36,7 @@ return [
      * Ej: https://lectortmo.com/library/manga/8635/mushoku-tensei-isekai-ittara-honki-dasu
      * 
      */
-    'url' => 'https://lectortmo.com/library/manga/8635/mushoku-tensei-isekai-ittara-honki-dasu',
+    'url' => 'https://lectortmo.com/library/manga/50485/shoukan-sareta-kenja-wa-isekai-wo-yuku-saikyou-nano-wa-fuyou-zaiko-no-item-deshita',
 
     /**
      * -----------------------------------
@@ -54,6 +54,6 @@ return [
      *         05 - 03.0
      * 
      */
-    'start' => 77,     
+    'start' => 7,     
     'end'   => false, # 'false' indica que descargara todo lo disponible
 ];

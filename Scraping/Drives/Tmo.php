@@ -141,7 +141,17 @@ class Tmo
      */
     public function getChapter(string $url, $folder = false) 
     {
-        $url  = str_replace('paginated', 'cascade',  $url);
+        // Acomodar URL a cascadas
+        if ( !strpos($url, 'cascade') ) {
+            $url = str_replace(
+                substr(
+                    $url, strpos($url, 'paginated')
+                ), 
+                'cascade', 
+                $url
+            );
+        }
+        
         $html = file_get_html($url);
         $save = 1;
         $folder = $folder ?? 'manga';
